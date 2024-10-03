@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+
+ 
+<div class="container">
+
+  <div class="left">
+    <span class="headername">
+      Desserts
+    </span>
+  </div>
+
+  <div class="row">
+  
+  
+    <div class="box col">
+      <img src="assets/images/image-waffle-desktop.jpg" alt="" class="image">
+      <div class="button-div">
+       <button class="button add-to-cart">
+         <img src="assets/images/icon-add-to-cart.svg" alt="">
+         Add to Cart
+       </button>
+      </div>
+
+     <div class="increment-dicrement" style="display: none;">
+       <button>
+         <div class="img decrement"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></div>
+         <span class="number">1</span>
+        <div class="img increment"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></div>
+        </button>
+     </div>
+     <div class="down">
+      <span class="category">Waffle</span>
+      <span class="name"> Waffle with Berries</span>
+      <span class="price">$6.50</span>
+     </div>
+    </div>
+
+
+
+
+
+    <!-- anotherbox------------------- -->
+    <div class="box col">
+      <img src="assets/images/image-creme-brulee-desktop.jpg" alt="" class="image">
+      <div class="button-div">
+       <button class="button add-to-cart">
+         <img src="assets/images/icon-add-to-cart.svg" alt="">
+         Add to Cart
+       </button>
+      </div>
+
+     <div class="increment-dicrement" style="display: none;">
+       <button>
+         <div class="img decrement"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></div>
+         <span class="number">1</span>
+        <div class="img increment"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></div>
+        </button>
+     </div>
+     <div class="down">
+      <span class="category">Crème Brûlée</span>
+      <span class="name"> Vanilla Bean Crème Brûlée</span>
+      <span class="price">$7.00</span>
+     </div>
+    </div>
+    <!-- anotherbox------------------- -->
+
+    <div class="box col">
+      <img src="assets/images/image-macaron-desktop.jpg" alt="" class="image">
+      <div class="button-div">
+       <button class="button add-to-cart">
+         <img src="assets/images/icon-add-to-cart.svg" alt="">
+         Add to Cart
+       </button>
+      </div>
+
+     <div class="increment-dicrement" style="display: none;">
+       <button>
+         <div class="img decrement"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></div>
+         <span class="number">1</span>
+        <div class="img increment"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></div>
+        </button>
+     </div>
+     <div class="down">
+      <span class="category"> 
+        Macaron</span>
+      <span class="name">Macaron Mix of Five</span>
+      <span class="price">$8.00</span>
+     </div>
+    </div>
+    <!-- anotherbox------------------- -->
+
+    <div class="box col">
+      <img src="assets/images/image-tiramisu-desktop.jpg" alt="" class="image">
+      <div class="button-div">
+       <button class="button add-to-cart">
+         <img src="assets/images/icon-add-to-cart.svg" alt="">
+         Add to Cart
+       </button>
+      </div>
+
+     <div class="increment-dicrement" style="display: none;">
+       <button>
+         <div class="img decrement"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></div>
+         <span class="number">1</span>
+        <div class="img increment"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></div>
+        </button>
+     </div>
+     <div class="down">
+      <span class="category"> 
+       
+        Tiramisu
+       </span>
+      <span class="name"> Classic Tiramisu</span>
+      <span class="price">$5.50</span>
+     </div>
+    </div>
+    <!-- anotherbox------------------- -->
+
+    <div class="box col">
+      <img src="assets/images/image-baklava-desktop.jpg" alt="" class="image">
+      <div class="button-div">
+       <button class="button add-to-cart">
+         <img src="assets/images/icon-add-to-cart.svg" alt="">
+         Add to Cart
+       </button>
+      </div>
+
+     <div class="increment-dicrement" style="display: none;">
+       <button>
+         <div class="img decrement"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></div>
+         <span class="number">1</span>
+        <div class="img increment"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></div>
+        </button>
+     </div>
+     <div class="down">
+      <span class="category"> 
+       
+        Baklava
+       </span>
+      <span class="name">Pistachio Baklava</span>
+      <span class="price">$4.00</span>
+     </div>
+    </div>
+    <!-- anotherbox------------------- -->
+
+
+    <div class="box col">
+      <img src="assets/images/image-baklava-desktop.jpg" alt="" class="image">
+      <div class="button-div">
+       <button class="button add-to-cart">
+         <img src="assets/images/icon-add-to-cart.svg" alt="">
+         Add to Cart
+       </button>
+      </div>
+
+     <div class="increment-dicrement" style="display: none;">
+       <button>
+         <div class="img decrement"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></div>
+         <span class="number">1</span>
+        <div class="img increment"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></div>
+        </button>
+     </div>
+     <div class="down">
+      <span class="category"> 
+      
+        Pie
+       </span>
+      <span class="name">  Lemon Meringue Pie</span>
+      <span class="price">$5.00</span>
+     </div>
+    </div>
+    <!-- anotherbox------------------- -->
+
+    <div class="box col">
+      <img src="assets/images/image-cake-desktop.jpg" alt="" class="image">
+      <div class="button-div">
+       <button class="button add-to-cart">
+         <img src="assets/images/icon-add-to-cart.svg" alt="">
+         Add to Cart
+       </button>
+      </div>
+
+     <div class="increment-dicrement" style="display: none;">
+       <button>
+         <div class="img decrement"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></div>
+         <span class="number">1</span>
+        <div class="img increment"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></div>
+        </button>
+     </div>
+     <div class="down">
+      <span class="category"> 
+      
+        Cake
+       </span>
+      <span class="name"> Red Velvet Cake</span>
+      <span class="price">$4.50</span>
+     </div>
+    </div>
+    <!-- anotherbox------------------- -->
+    <div class="box col">
+      <img src="assets/images/image-brownie-desktop.jpg" alt="" class="image">
+      <div class="button-div">
+       <button class="button add-to-cart">
+         <img src="assets/images/icon-add-to-cart.svg" alt="">
+         Add to Cart
+       </button>
+      </div>
+
+     <div class="increment-dicrement" style="display: none;">
+       <button>
+         <div class="img decrement"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></div>
+         <span class="number">1</span>
+        <div class="img increment"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></div>
+        </button>
+     </div>
+     <div class="down">
+      <span class="category"> 
+      
+        Brownie
+       </span>
+      <span class="name">  Salted Caramel Brownie</span>
+      <span class="price">$4.50</span>
+     </div>
+    </div>
+    <!-- anotherbox------------------- -->
+    <div class="box col">
+      <img  src="assets/images/image-panna-cotta-desktop.jpg" alt="" class="image">
+      <div class="button-div">
+       <button class="button add-to-cart">
+         <img src="assets/images/icon-add-to-cart.svg" alt="">
+         Add to Cart
+       </button>
+      </div>
+
+     <div class="increment-dicrement" style="display: none;">
+       <button>
+         <div class="img decrement"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/></svg></div>
+         <span class="number">1</span>
+        <div class="img increment"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg></div>
+        </button>
+     </div>
+     <div class="down">
+      <span class="category"> 
+      
+        Panna Cotta
+       </span>
+      <span class="name">Vanilla Panna Cotta</span>
+      <span class="price">$6.50</span>
+     </div>
+    </div>
+    <!-- anotherbox------------------- -->
+    <!-- anotherbox------------------- -->
+  </div>
+
+</div>
+
+<div class="outside" style="display: none;">
+  <div class="confirmation-box">
+
+    <div>
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="hsl(159, 69%, 38%)" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 32.121L13.5 24.6195L15.6195 22.5L21 27.879L32.3775 16.5L34.5 18.6225L21 32.121Z" fill="#1EA575"/>
+        <path d="M24 3C19.8466 3 15.7865 4.23163 12.333 6.53914C8.8796 8.84665 6.18798 12.1264 4.59854 15.9636C3.0091 19.8009 2.59323 24.0233 3.40352 28.0969C4.21381 32.1705 6.21386 35.9123 9.15077 38.8492C12.0877 41.7861 15.8295 43.7862 19.9031 44.5965C23.9767 45.4068 28.1991 44.9909 32.0364 43.4015C35.8736 41.812 39.1534 39.1204 41.4609 35.667C43.7684 32.2135 45 28.1534 45 24C45 18.4305 42.7875 13.089 38.8493 9.15076C34.911 5.21249 29.5696 3 24 3ZM24 42C20.4399 42 16.9598 40.9443 13.9997 38.9665C11.0397 36.9886 8.73256 34.1774 7.37018 30.8883C6.0078 27.5992 5.65134 23.98 6.34587 20.4884C7.04041 16.9967 8.75474 13.7894 11.2721 11.2721C13.7894 8.75473 16.9967 7.0404 20.4884 6.34587C23.98 5.65133 27.5992 6.00779 30.8883 7.37017C34.1774 8.73255 36.9886 11.0397 38.9665 13.9997C40.9443 16.9598 42 20.4399 42 24C42 28.7739 40.1036 33.3523 36.7279 36.7279C33.3523 40.1036 28.7739 42 24 42Z" fill="#1EA575"/>
+        </svg>
+        
+    </div>
+      <h2>Order Confirmed</h2>
+      <span class="word">We hope you enjoy your food!</span>
+     <div class="confirm-box">
+      <div class="confirmation-details">
+       <div class="confbox">
+        <div class="item-img">
+          <img src="assets/images/image-baklava-mobile.jpg" alt="">
+        </div>
+        <div class="item-info">
+         <div class="left-info">
+           <span class="itemname">baklava</span>
+         <div class="div-top">
+           <span class="numberofitems">1x</span>
+            <span class="itemprice">@$5.00</span>
+        
+        </div>
+         </div>
+        </div>
+        <span class="priceperitem">
+    $10
+        </span>
+       </div>
+      </div>
+     </div>
+      
+      <div class="order-total">
+        <span class="wordt">Order Total</span>
+        <span class="totalp">
+          $46
+        </span>
+      </div>
+      
+    
+      <button class="downbtn">Start new order</button>
+    
+    
+    </div>
+</div>
+
+  <!-- cart ---------------------------- -->
+  <div class="your-cart">
+    <span class="cartheader">Your Cart <span class="quantity"></span></span>
+
+    <div class="empty-cart" style="display: block; text-align: center;">
+      <img src="assets/images/illustration-empty-cart.svg" alt="Empty Cart">
+      <p>Your cart is empty.</p>
+    </div>
+
+    <div class="cart-items-container">
+      <!-- <div class="cart-item">
+        <div class="item-info">
+          <span class="item-name">
+            Classic Tiramisu
+           
+          </span>
+          <div class="downinfo">
+            <span class="numberofitem">1x</span>
+            <div>
+              <span class="item-price">@ $5.50</span>
+            <span class="item-pricexnumberofitems">$5.50</span>
+            </div>
+          </div>
+        </div>
+          <div class="delete">
+            <img class="img-delete" src="assets/images/icon-remove-item.svg" alt="">
+    
+      </div>
+      </div> -->
+  </div>
+  <div class="total" style="display: none;">
+    <div class="leftt">
+      <span>Order total</span>
+    </div>
+    <div class="total-info">
+      <span class="Total-Price">$0.00</span>
+    </div>
+  </div>
+  
+  <div class="info" style="display: none;">
+    <button>
+      <img src="assets/images/icon-carbon-neutral.svg" alt="">
+      This is a <span>Carbon-neutral</span> delivery
+    </button>
+  </div>
+  <div class="button-confirm" style="display: none;">
+    <button>Confirm Order</button>
+  </div>
+  
+
+
+  </div>
+
+
+
+
+
+  <!-- Desserts
+
+  Waffle with Berries
+  Waffle
+  6.50
+  Add to Cart
+
+  Vanilla Bean Crème Brûlée
+  Crème Brûlée
+  7.00
+  Add to Cart
+
+  Macaron Mix of Five
+  Macaron
+  8.00
+  Add to Cart
+
+  Classic Tiramisu
+  Tiramisu
+  5.50
+  Add to Cart
+
+  Pistachio Baklava
+  Baklava
+  4.00
+  Add to Cart
+
+  Lemon Meringue Pie
+  Pie
+  5.00
+  Add to Cart
+
+  Red Velvet Cake
+  Cake
+  4.50
+  Add to Cart
+
+  Salted Caramel Brownie
+  Brownie
+  4.50
+  Add to Cart
+
+  Vanilla Panna Cotta
+  Panna Cotta
+  6.50
+  Add to Cart
+
+  Your Cart ( Quantity)
+  Your added items will appear here -->
+
+ 
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+<script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
